@@ -35,10 +35,10 @@
   <section class="jumbotron" id="home">
     <div class="container">
       <div class="row">
-      
-      <div class="embed-responsive embed-responsive-16by9">
-        <video class="embed-responsive-item" src="" autoplay muted controls></video>        
-      </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" src="" autoplay muted controls></video>
+        </div>
 
         <div class="col-sm-4">
           <h2>About us</h2>
@@ -57,7 +57,7 @@
     <a class="btn btn-primary" role="button" href="#first" data-toggle="collapse" aria-expanded="false">HTML5</a>
     <h2>Technology We Use</h2>
     <div class="row">
-      <article class="collapse col-sm-3" id="first">
+      <article class="collapse col-sm-3">
         <h3>HTML5</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -112,17 +112,21 @@
 
   <div class="panel-group" id="accordion" role="tablist">
     <div class="panel panel-default">
-        <div class="panel-heading" id="heading-one">
-          <h3>
-            <a role="button" href="#first" data-parent="accordion" data-toggle="collapse" aria-expanded="false">HTML5</a>            
-          </h3>
+      <div class="panel-heading" id="heading-one">
+        <h3>
+          <a role="button" href="#first" data-parent="accordion" data-toggle="collapse" aria-expanded="false">HTML5</a>
+        </h3>
+      </div>
+      <article class="panel-collapse collapse in col-sm-3" id="first">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
         </div>
-        <article class="panel-collapse collapse in col-sm-3 panel-body" id="first">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
+      </article>
     </div>
   </div>
 
