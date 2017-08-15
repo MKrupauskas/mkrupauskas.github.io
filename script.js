@@ -6,5 +6,6 @@ $(function() {
         wrap: false,
         keyboard: false
     });
-    
+
+    $('[data-toggle="tooltip"]').tooltip();
 });
