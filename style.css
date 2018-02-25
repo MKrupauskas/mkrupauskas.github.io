@@ -3,3 +3,55 @@
     margin-bottom: 0;
   }
 }
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+a:link {
+  color: #56a5ce;
+}
+a:visited {
+  color: #56a5ce;
+}
+a:hover {
+  color: #67b6df;
+}
+a:active {
+  color: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation--item {
+  font-size: 1.3em;
+  margin: 1em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navigation--item:after {
+  margin-left: 1.75em;
+  content: " /";
+  color: #ddd;
+}
+
+/*
+.navigation--item:last-child:after {
+  content: "";
+  margin-left: 1.75em;
+}
+*/
+
+.navigation {
+  margin-left: 10em;
+  margin-right: 10em;
+}
