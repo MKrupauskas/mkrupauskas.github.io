@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 
-@media (max-width: 767px) {
-  .navbar {
-    margin-bottom: 0;
-  }
-}
-
 a:link {
   color: #56a5ce;
 }
@@ -30,7 +24,7 @@ a:active {
 }
 
 .navigation--item {
-  display: inline-block;
+  display: none;
   font-size: 1.3em;
   margin: 1em;
   font-family: "Roboto Condensed", sans-serif;
@@ -53,11 +47,8 @@ a:active {
   border-bottom: solid 1px #ddd;
 }
 
-.navigation--button:only-child {
-  margin-bottom: 1em;
-}
-
 .navigation--button {
+  margin-bottom: 1em;
   margin-top: 1em;
   border: 0;
   background: none;
@@ -82,4 +73,22 @@ a:active {
   border-bottom: 4px solid #56a5ce;
   width: 100%;
   margin-bottom: 5px;
+}
+
+.navigation__active {
+  display: block;
+}
+
+.navigation__active:after {
+  content: none;
+}
+
+@media (min-width: 880px) {
+  .navigation--button {
+    display: none;
+  }
+
+  .navigation--item {
+    display: inline-block;
+  }
 }
