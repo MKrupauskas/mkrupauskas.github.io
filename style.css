@@ -76,7 +76,8 @@ a:active {
 }
 
 .navigation__active {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__active:after {
