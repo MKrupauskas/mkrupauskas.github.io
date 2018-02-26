@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
 @media (max-width: 767px) {
   .navbar {
     margin-bottom: 0;
   }
 }
-
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 
 a:link {
   color: #56a5ce;
@@ -25,14 +25,12 @@ a:active {
 }
 
 .navigation--list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   list-style: none;
-  border-bottom: solid 1px #ddd;
 }
 
 .navigation--item {
+  display: inline-block;
   font-size: 1.3em;
   margin: 1em;
   font-family: "Roboto Condensed", sans-serif;
@@ -44,14 +42,44 @@ a:active {
   color: #ddd;
 }
 
-/*
 .navigation--item:last-child:after {
-  content: "";
-  margin-left: 1.75em;
+  content: none;
 }
-*/
 
 .navigation {
+  text-align: center;
   margin-left: 10em;
   margin-right: 10em;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation--button:only-child {
+  margin-bottom: 1em;
+}
+
+.navigation--button {
+  margin-top: 1em;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid #56a5ce;
+  width: 28px;
+}
+
+.navigation--button:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #56a5ce;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.navigation--button:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #56a5ce;
+  width: 100%;
+  margin-bottom: 5px;
 }
