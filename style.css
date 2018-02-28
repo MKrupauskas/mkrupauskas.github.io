@@ -42,12 +42,13 @@ a:active {
 
 .navigation {
   text-align: center;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 3em;
+  margin-right: 3em;
   border-bottom: solid 1px #ddd;
 }
 
 .navigation--button {
+  display: inline-block;
   margin-bottom: 1em;
   margin-top: 1em;
   border: 0;
@@ -55,12 +56,9 @@ a:active {
   outline: 0;
   padding: 0;
   cursor: pointer;
-}
-
-.navigation--button:before {
-}
-
-.navigation--button:after {
+  color: #56a5ce;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25em;
 }
 
 .navigation__active {
@@ -83,32 +81,7 @@ a:active {
 }
 
 section {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 1em;
+  margin-right: 1em;
   border-bottom: solid 1px #ddd;
-}
-
-.icon {
-  border-bottom: 4px solid #56a5ce;
-  width: 28px;
-  border: 0;
-  background: none;
-  outline: 0;
-  padding: 0;
-}
-
-.icon:before {
-  content: "";
-  display: block;
-  border-bottom: 4px solid #56a5ce;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.icon:after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid #56a5ce;
-  width: 100%;
-  margin-bottom: 5px;
 }
