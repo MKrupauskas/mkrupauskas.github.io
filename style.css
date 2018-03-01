@@ -48,10 +48,10 @@ a:active {
 }
 
 .navigation--button {
-  display: inline-block;
+  border: 0;
+  display: flex;
   margin-bottom: 1em;
   margin-top: 1em;
-  border: 0;
   background: none;
   outline: 0;
   padding: 0;
