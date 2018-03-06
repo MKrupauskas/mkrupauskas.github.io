@@ -1,25 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 a:link {
   color: #56a5ce;
 }
+
 a:visited {
   color: #56a5ce;
 }
+
 a:hover {
   color: #67b6df;
 }
+
 a:active {
   color: #aaa;
 }
 
 * {
+  font-family: "Didact Gothic", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .navigation--list {
-  text-align: center;
   list-style: none;
 }
 
@@ -27,13 +30,6 @@ a:active {
   display: none;
   font-size: 1.3em;
   margin: 1em;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.navigation--item:after {
-  margin-left: 1.75em;
-  content: " /";
-  color: #ddd;
 }
 
 .navigation--item:last-child:after {
@@ -41,9 +37,11 @@ a:active {
 }
 
 .navigation {
-  text-align: center;
-  margin-left: 3em;
-  margin-right: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
   border-bottom: solid 1px #ddd;
 }
 
@@ -66,17 +64,17 @@ a:active {
   justify-content: center;
 }
 
-.navigation__active:after {
-  content: none;
-}
-
-@media (min-width: 880px) {
+@media (min-width: 601px) {
   .navigation--button {
     display: none;
   }
-
   .navigation--item {
     display: inline-block;
+  }
+  .navigation--item:after {
+    content: " /";
+    margin-left: 1.75em;
+    color: #ddd;
   }
 }
 
