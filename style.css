@@ -22,6 +22,11 @@ a:active {
   padding: 0;
 }
 
+.navigation {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
 .navigation--list {
   list-style: none;
 }
@@ -48,8 +53,6 @@ a:active {
 .navigation--button {
   border: 0;
   display: flex;
-  margin-bottom: 1em;
-  margin-top: 1em;
   background: none;
   outline: 0;
   padding: 0;
@@ -68,6 +71,9 @@ a:active {
   .navigation--button {
     display: none;
   }
+  .navigation {
+    padding: 0;
+  }
   .navigation--item {
     display: inline-block;
   }
@@ -82,4 +88,10 @@ section {
   margin-left: 1em;
   margin-right: 1em;
   border-bottom: solid 1px #ddd;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
