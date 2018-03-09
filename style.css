@@ -93,7 +93,9 @@ section {
   align-content: center;
 }
 
-.about {
+.about,
+.contact,
+.projects {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,11 +137,7 @@ section {
 }
 
 .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 2em;
 }
 
 .card {
@@ -169,4 +167,9 @@ section {
   .about--image {
     margin: 0;
   }
+}
+
+.card--info {
+  margin-left: 2em;
+  max-width: 475px;
 }
