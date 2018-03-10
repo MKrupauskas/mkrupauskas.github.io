@@ -148,8 +148,16 @@ section {
   margin: 1em;
 }
 
-.card img {
-  margin-right: auto;
+.card> :first-child {
+  margin-right: 2em;
+}
+
+.card> :last-child {
+  margin-right: 1em;
+}
+
+.card__photo {
+  border-radius: 1em;
 }
 
 @media (max-width: 655px) {
@@ -170,6 +178,5 @@ section {
 }
 
 .card--info {
-  margin-left: 2em;
   max-width: 475px;
 }
