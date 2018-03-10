@@ -1,7 +1,7 @@
 document
-  .querySelector(".navigation--button")
+  .querySelector(".navigation__button")
   .addEventListener("click", function() {
-    document.querySelectorAll(".navigation--item").forEach(item => {
-      item.classList.toggle("navigation__active");
+    document.querySelectorAll(".navigation__item").forEach(item => {
+      item.classList.toggle("navigation--active");
     });
   });
