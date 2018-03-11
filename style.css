@@ -144,7 +144,8 @@ section {
   color: #fff;
 }
 
-.about__contact a {
+.about__contact a,
+footer a {
   text-decoration: none;
 }
 
@@ -174,8 +175,38 @@ section {
 }
 
 .card__info h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 0.5em;
+}
+
+.contact {
+  max-width: 807px;
+}
+
+.contact h3 {
+  margin: 0.25em 0 1em 0;
+}
+
+.contact h2 {
+  font-size: 2em;
+}
+
+.contact h3 {
+  font-size: 1.75em;
+}
+
+footer {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-right: auto;
+}
+
+footer a {
+  margin-left: 1em;
 }
 
 @media (max-width: 655px) {
@@ -211,6 +242,21 @@ section {
   .card__info {
     text-align: center;
   }
+  .contact {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  footer p,
+  footer .about__social {
+    margin: 0 0 0.5em 0;
+  }
+  footer .about__social a {
+    margin: 0 1em 0 1em;
+  }
 }
 
 @media (max-width: 382px) {
@@ -231,8 +277,8 @@ section {
   .about h2 {
     font-size: 1.75em;
   }
-}
-
-.contact {
-  max-width: 807px;
+  .contact h3,
+  .contact h2 {
+    font-size: 1.7em;
+  }
 }

@@ -1,3 +1,4 @@
+// navigation enabled on button click
 document
   .querySelector(".navigation__button")
   .addEventListener("click", function() {
@@ -5,3 +6,6 @@ document
       item.classList.toggle("navigation--active");
     });
   });
+
+// footer date updating
+document.querySelector("#date").innerHTML = new Date().getFullYear();
