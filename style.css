@@ -123,6 +123,15 @@ section {
   border-radius: 8em;
 }
 
+.about__contact {
+  display: flex;
+  align-items: center;
+}
+
+.about__social {
+  margin-left: 1em;
+}
+
 .about__button {
   padding: 0.5em;
   margin: 1em 0em 1em 0em;
@@ -133,6 +142,10 @@ section {
   font-weight: 700;
   font-size: 1.2em;
   color: #fff;
+}
+
+.about__contact a {
+  text-decoration: none;
 }
 
 .projects {
@@ -203,5 +216,11 @@ section {
   .card__photo {
     height: 200px;
     width: 200px;
+  }
+  .about__contact {
+    flex-direction: column;
+  }
+  .about__social {
+    margin: 0;
   }
 }
