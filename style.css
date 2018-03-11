@@ -224,4 +224,15 @@ section {
   .about__social {
     margin: 0;
   }
+  .about h1 {
+    font-size: 1.7em;
+  }
+
+  .about h2 {
+    font-size: 1.75em;
+  }
+}
+
+.contact {
+  max-width: 807px;
 }
