@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
 .navigation a:link {
   color: #56a5ce;
 }
@@ -100,7 +100,6 @@ section {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  max-width: 1200px;
 }
 
 .about h1 {
@@ -125,12 +124,12 @@ section {
 }
 
 .about__button {
-  padding: .5em;
+  padding: 0.5em;
   margin: 1em 0em 1em 0em;
   border-radius: 1em;
   background-color: #56a5ce;
   border: 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .11);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
   font-weight: 700;
   font-size: 1.2em;
   color: #fff;
@@ -144,20 +143,21 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
-  margin: 1em;
+  margin-top: 1em;
 }
 
-.card> :first-child {
+.card > :first-child {
   margin-right: 2em;
-}
-
-.card> :last-child {
-  margin-right: 1em;
 }
 
 .card__photo {
   border-radius: 1em;
+  width: 300px;
+  height: 300px;
+}
+
+.card__info {
+  max-width: 475px;
 }
 
 @media (max-width: 655px) {
@@ -175,8 +175,29 @@ section {
   .about__image {
     margin: 0;
   }
+  .card:nth-child(2n + 1) {
+    flex-direction: column-reverse;
+  }
+  .card:nth-child(2n) {
+    flex-direction: column;
+  }
+  .card > :first-child {
+    margin-right: 0;
+  }
+  .card > :last-child {
+    margin-right: 0;
+  }
+  .card__photo {
+    margin-bottom: 1em;
+  }
+  .card__info {
+    text-align: center;
+  }
 }
 
-.card__info {
-  max-width: 475px;
+@media (max-width: 382px) {
+  .card__photo {
+    height: 200px;
+    width: 200px;
+  }
 }
