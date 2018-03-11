@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
-.navigation a:link {
+a:link {
   color: #56a5ce;
 }
 
-.navigation a:visited {
+a:visited {
   color: #56a5ce;
 }
 
-.navigation a:hover {
+a:hover {
   color: #67b6df;
 }
 
-.navigation a:active {
+a:active {
   color: #aaa;
 }
 
@@ -158,6 +158,10 @@ section {
 
 .card__info {
   max-width: 475px;
+}
+
+.card__info h3 {
+  font-size: 2em;
 }
 
 @media (max-width: 655px) {
