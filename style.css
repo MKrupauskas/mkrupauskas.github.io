@@ -285,20 +285,10 @@ footer a {
 }
 
 @font-face {
-  font-family: emoji1;
-  src: url(emoji.woff);
-}
-
-@font-face {
-  font-family: emoji2;
-  src: url(emoji.ttc);
-}
-
-@font-face {
-  font-family: emoji3;
-  src: url(emoji.ttf);
+  font-family: emoji;
+  src: url(seguiemj.ttf);
 }
 
 .emoji {
-  font-family: emoji2;
+  font-family: emoji;
 }
