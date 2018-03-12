@@ -114,6 +114,7 @@ section {
 .about__info {
   margin-right: 2em;
   max-width: 575px;
+  font-family: emoji;
 }
 
 .about__photo {
@@ -281,4 +282,13 @@ footer a {
   .contact h2 {
     font-size: 1.7em;
   }
+}
+
+@font-face {
+  font-family: emoji;
+  src: url(emoji.ttc);
+}
+
+.emoji {
+  font-family: emoji;
 }
