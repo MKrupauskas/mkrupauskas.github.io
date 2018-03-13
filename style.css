@@ -283,12 +283,3 @@ footer a {
     font-size: 1.7em;
   }
 }
-
-@font-face {
-  font-family: emoji;
-  src: url(seguiemj.ttf);
-}
-
-.emoji {
-  font-family: emoji;
-}
