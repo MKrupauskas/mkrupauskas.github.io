@@ -258,6 +258,9 @@ footer a {
   footer .about__social a {
     margin: 0 1em 0 1em;
   }
+  .emoji {
+    image-rendering: -webkit-optimize-contrast;
+  }
 }
 
 @media (max-width: 382px) {
@@ -282,4 +285,9 @@ footer a {
   .contact h2 {
     font-size: 1.7em;
   }
+}
+
+.emoji {
+  width: 1.1em;
+  vertical-align: sub;
 }
