@@ -25,6 +25,10 @@ section {
   align-content: center;
 }
 
+p {
+  font-size: 1.2em;
+}
+
 .about,
 .contact,
 .projects {
