@@ -11,10 +11,10 @@ document
 document.querySelector("#date").innerHTML = new Date().getFullYear();
 
 // smooth scrolling
-document.querySelectorAll(".navigation__item").forEach(item => {
+document.querySelectorAll(".scroll").forEach(item => {
   item.addEventListener("click", function() {
-    const className = item.childNodes[1].innerHTML.toLowerCase();
-    if (className === "blog") return;
+    // gets class name from href and removes the #
+    const className = item.getAttribute("href").split("#")[1];
     event.preventDefault();
     document.querySelector(`.${className}`).scrollIntoView({
       behavior: "smooth",
