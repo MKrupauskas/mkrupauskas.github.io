@@ -252,9 +252,6 @@ footer a {
   .card__info {
     text-align: center;
   }
-  .contact {
-    text-align: center;
-  }
   footer {
     flex-direction: column-reverse;
     justify-content: center;
@@ -291,7 +288,10 @@ footer a {
   }
   .contact h3,
   .contact h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
+  }
+  .contact {
+    text-align: center;
   }
 }
 
