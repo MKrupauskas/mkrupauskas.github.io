@@ -32,10 +32,10 @@ p {
 .about,
 .contact,
 .projects {
+  padding: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
 }
 
 * {
@@ -80,7 +80,6 @@ p {
   padding: 0;
   cursor: pointer;
   color: #56a5ce;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.25em;
 }
 
