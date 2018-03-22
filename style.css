@@ -35,7 +35,7 @@ svg {
   height: 2em;
 }
 
-navigation__button svg {
+.navigation__button svg {
   width: 28px;
   height: 28px;
 }
