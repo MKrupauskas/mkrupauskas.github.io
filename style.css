@@ -29,6 +29,12 @@ p {
   font-size: 1.2em;
 }
 
+svg {
+  fill: #56a5ce;
+  width: 2em;
+  height: 2em;
+}
+
 .about,
 .contact,
 .projects {
