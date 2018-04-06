@@ -23,3 +23,14 @@ document.querySelectorAll(".scroll").forEach(item => {
     });
   });
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("./serviceworker.js", { scope: "./" })
+    .then(function(registration) {
+      console.info("Registered Service Worker", registration);
+    })
+    .catch(function(err) {
+      console.error("Service Worker Failed to Register", err);
+    });
+}
