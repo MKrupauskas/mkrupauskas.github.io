@@ -194,6 +194,10 @@ footer a {
   max-width: 475px;
 }
 
+.card:nth-of-type(2n) .card__info {
+  order: -1;
+}
+
 .card__info h3 {
   font-size: 1.75em;
   margin-bottom: 0.5em;
