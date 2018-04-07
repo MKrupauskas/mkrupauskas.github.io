@@ -1,0 +1,8 @@
+{
+  "name": "Krupauskas' Portfolio",
+  "short_name": "Krupauskas' Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#56a5ce",
+  "description": "The portfolio of Mykolas Krupauskas."
+}
