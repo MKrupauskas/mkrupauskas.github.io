@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
 
 a:link {
-  color: #34a3ce;
+  color: #34a3ab;
 }
 
 a:visited {
-  color: #34a3ce;
+  color: #34a3ab;
 }
 
 a:hover {
@@ -30,7 +30,7 @@ p {
 }
 
 svg {
-  fill: #34a3ce;
+  fill: #34a3ab;
   width: 2em;
   height: 2em;
 }
@@ -90,7 +90,7 @@ svg {
   outline: 0;
   padding: 0;
   cursor: pointer;
-  color: #34a3ce;
+  color: #34a3ab;
   font-size: 1.25em;
 }
 
@@ -118,7 +118,7 @@ svg {
 
 .about h1 {
   font-size: 2em;
-  color: #acacac;
+  color: #777;
 }
 
 .about h2 {
@@ -151,7 +151,7 @@ svg {
   padding: 0.5em;
   margin: 1em 0em 1em 0em;
   border-radius: 1em;
-  background-color: #34a3ce;
+  background-color: #34a3ab;
   border: 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
   font-weight: 700;
