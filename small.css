@@ -1,0 +1,23 @@
+.card__photo {
+  width: 200px;
+}
+.about__contact {
+  flex-direction: column;
+}
+.about__social {
+  margin: 0;
+}
+.about h1 {
+  font-size: 1.7em;
+}
+
+.about h2 {
+  font-size: 1.75em;
+}
+.contact h3,
+.contact h2 {
+  font-size: 1.5em;
+}
+.contact {
+  text-align: center;
+}
