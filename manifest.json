@@ -3,6 +3,7 @@
   "short_name": "MK Portfolio",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#56a5ce",
+  "background_color": "#34a3ce",
+  "theme_color": "#34a3ce",
   "description": "The portfolio of Mykolas Krupauskas."
 }
