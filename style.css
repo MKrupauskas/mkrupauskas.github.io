@@ -37,7 +37,8 @@ svg {
 
 .navigation__button svg {
   width: 28px;
-  height: 28px;
+  /* This accounts for the menu text */
+  height: 29px;
 }
 
 .about,
@@ -49,7 +50,22 @@ svg {
   align-items: center;
 }
 
-* {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ol,
+ul,
+li {
   font-family: "Didact Gothic", sans-serif;
   margin: 0;
   padding: 0;
