@@ -92,6 +92,7 @@ svg {
   cursor: pointer;
   color: #34a3ab;
   font-size: 1.25em;
+  font-weight: bold;
 }
 
 .navigation--active {
