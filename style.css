@@ -1,46 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
-
-a:link {
-  color: #34a3ab;
+.navigation,
+section {
+  border-bottom: solid 1px #ddd;
 }
-
+a:link,
 a:visited {
   color: #34a3ab;
 }
-
 a:hover {
   color: #67b6df;
 }
-
 a:active {
   color: #aaa;
 }
-
 section {
   margin-left: 1em;
   margin-right: 1em;
-  border-bottom: solid 1px #ddd;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-
 p {
   font-size: 1.2em;
 }
-
 svg {
   fill: #34a3ab;
   width: 2em;
   height: 2em;
 }
-
 .navigation__button svg {
   width: 28px;
-  /* This accounts for the menu text */
   height: 29px;
 }
-
 .about,
 .contact,
 .projects {
@@ -49,57 +39,58 @@ svg {
   justify-content: center;
   align-items: center;
 }
-
-body {
+body,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+span,
+ul {
   font-family: "Didact Gothic", sans-serif;
   margin: 0;
+  padding: 0;
 }
-
-.navigation {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-
 .navigation__list {
   list-style: none;
 }
-
 .navigation__item {
   display: none;
   font-size: 1.3em;
   margin: 1em;
 }
-
 .navigation__item:last-child:after {
   content: none;
 }
-
 .navigation {
+  padding-bottom: 1em;
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  border-bottom: solid 1px #ddd;
 }
-
 .navigation__button {
   border: 0;
   display: flex;
-  background: none;
+  background: 0 0;
   outline: 0;
   padding: 0;
   cursor: pointer;
   color: #34a3ab;
   font-size: 1.25em;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .navigation--active {
   display: flex;
   justify-content: center;
 }
-
 @media (min-width: 601px) {
   .navigation__button {
     display: none;
@@ -116,41 +107,38 @@ body {
     color: #ddd;
   }
 }
-
+.card,
+footer {
+  display: flex;
+}
 .about h1 {
   font-size: 2em;
   color: #777;
 }
-
 .about h2 {
   font-size: 2.2em;
 }
-
 .about__info {
   margin-right: 2em;
   max-width: 575px;
   font-family: emoji;
 }
-
 .about__photo {
   width: 200px;
   height: 200px;
   margin-right: auto;
   border-radius: 8em;
 }
-
 .about__contact {
   display: flex;
   align-items: center;
 }
-
 .about__social {
   margin-left: 1em;
 }
-
 .about__button {
   padding: 0.5em;
-  margin: 1em 0em 1em 0em;
+  margin: 1em 0;
   border-radius: 1em;
   background-color: #34a3ab;
   border: 0;
@@ -158,82 +146,61 @@ body {
   font-weight: 700;
   font-size: 1.2em;
 }
-
-a.about__button:link,
-a.about__button:visited,
+a.about__button:active,
 a.about__button:hover,
-a.about__button:active {
+a.about__button:link,
+a.about__button:visited {
   color: #fff;
 }
-
 .about__contact a,
 footer a {
   text-decoration: none;
 }
-
 .projects {
   flex-direction: column;
 }
-
 .card {
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0 2em 0;
+  margin: 2em 0;
 }
-
 .card > :first-child {
   margin-right: 2em;
 }
-
 .card__photo {
   border-radius: 1em;
   width: 300px;
 }
-
 .card__info {
   max-width: 475px;
 }
-
 .card:nth-of-type(2n) .card__info {
   order: -1;
 }
-
 .card__info h3 {
   font-size: 1.75em;
   margin-bottom: 0.5em;
 }
-
 .contact {
   max-width: 807px;
 }
-
-.contact h3 {
-  margin: 0.25em 0 1em 0;
-}
-
 .contact h2 {
   font-size: 2em;
 }
-
 .contact h3 {
+  margin: 0.25em 0 1em;
   font-size: 1.75em;
 }
-
 footer {
   padding: 1em;
-  display: flex;
   align-items: center;
 }
-
 footer p {
   margin-right: auto;
 }
-
 footer a {
   margin-left: 1em;
 }
-
 .emoji {
   width: 1.1em;
   vertical-align: sub;
