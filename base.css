@@ -1,0 +1,233 @@
+/* Links */
+
+a,
+a:visited {
+  color: #34a3ab;
+}
+
+a:hover {
+  color: #45b4bc;
+}
+
+a:active {
+  color: #aaa;
+}
+
+/* Base */
+
+body,
+ul,
+h1,
+h2,
+h3,
+span,
+a,
+li,
+p {
+  font-family: "Didact Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0 1em 0 1em;
+  border-bottom: solid 1px #ddd;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+svg {
+  fill: #34a3ab;
+  width: 2em;
+  height: 2em;
+}
+
+.about,
+.contact,
+.projects {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation__button svg {
+  width: 28px;
+  /* This accounts for the menu text */
+  height: 29px;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  display: none;
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.navigation__item:last-child:after {
+  content: none;
+}
+
+.navigation__button {
+  display: none;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.navigation__item {
+  display: inline-block;
+}
+.navigation__item:after {
+  content: " /";
+  margin-left: 1.75em;
+  color: #ddd;
+}
+
+/* About */
+
+.about h1 {
+  font-size: 2em;
+  color: #777;
+}
+
+.about h2 {
+  font-size: 2.2em;
+}
+
+.about__info {
+  margin-right: 2em;
+  max-width: 575px;
+}
+
+.about__photo {
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  border-radius: 8em;
+}
+
+.contact__box {
+  display: flex;
+  align-items: center;
+}
+
+.about__social {
+  margin-left: 1em;
+}
+
+.emoji {
+  width: 1.1em;
+  vertical-align: sub;
+}
+
+/* Button */
+
+.button {
+  padding: 0.5em;
+  margin: 1em 0em 1em 0em;
+  border-radius: 1em;
+  background-color: #34a3ab;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  color: #fff;
+}
+
+.contact__box a,
+.contact a,
+footer a {
+  text-decoration: none;
+}
+
+/* Projects */
+
+.projects {
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 2em 0;
+}
+
+.card > :first-child {
+  margin-right: 2em;
+}
+
+.card__photo {
+  border-radius: 1em;
+  width: 300px;
+}
+
+.card__info {
+  max-width: 475px;
+}
+
+.card:nth-of-type(2n) .card__info {
+  order: -1;
+}
+
+.card__info h3 {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+/* Contact */
+
+.contact {
+  max-width: 807px;
+}
+
+.contact h3 {
+  margin: 0.25em 0 1em 0;
+}
+
+.contact h2 {
+  font-size: 2em;
+}
+
+.contact h3 {
+  font-size: 1.75em;
+}
+
+/* Footer */
+
+footer {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-right: auto;
+}
+
+footer a {
+  margin-left: 1em;
+}
