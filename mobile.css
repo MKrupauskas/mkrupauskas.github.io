@@ -1,3 +1,22 @@
+.about,
+.contact,
+.projects {
+  padding: 2em 0 2em 0;
+}
+.navigation {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.navigation__item:after {
+  content: none;
+}
+.navigation__item {
+  display: none;
+}
+.navigation__button {
+  display: flex;
+}
 .about {
   flex-direction: column-reverse;
 }
@@ -46,3 +65,33 @@ footer .about__social a {
   image-rendering: -webkit-optimize-contrast;
 }
 
+.about__photo {
+  margin-bottom: 1em;
+}
+.card__photo {
+  width: 200px;
+}
+.contact__box {
+  flex-direction: column;
+}
+.about__social {
+  margin: 0;
+}
+.about h1 {
+  font-size: 1.7em;
+}
+
+.about h2 {
+  font-size: 1.75em;
+}
+.contact h3,
+.contact h2 {
+  font-size: 1.5em;
+}
+.contact {
+  text-align: center;
+}
+.navigation--active {
+  display: flex;
+  justify-content: center;
+}

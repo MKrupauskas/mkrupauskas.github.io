@@ -1,20 +1,35 @@
-.navigation,
-section {
-  border-bottom: solid 1px #ddd;
-}
-a:link,
+/* Links */
+
+a,
 a:visited {
   color: #34a3ab;
 }
 a:hover {
-  color: #67b6df;
+  color: #45b4bc;
 }
 a:active {
   color: #aaa;
 }
+
+/* Base */
+
+body,
+ul,
+h1,
+h2,
+h3,
+span,
+a,
+li,
+p {
+  font-family: "Didact Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 section {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 0 1em 0 1em;
+  border-bottom: solid 1px #ddd;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -27,10 +42,6 @@ svg {
   width: 2em;
   height: 2em;
 }
-.navigation__button svg {
-  width: 28px;
-  height: 29px;
-}
 .about,
 .contact,
 .projects {
@@ -39,23 +50,22 @@ svg {
   justify-content: center;
   align-items: center;
 }
-body,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-ol,
-p,
-span,
-ul {
-  font-family: "Didact Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
 }
+
+.navigation__button svg {
+  width: 28px;
+  /* This accounts for the menu text */
+  height: 29px;
+}
+
 .navigation__list {
   list-style: none;
 }
@@ -67,50 +77,25 @@ ul {
 .navigation__item:last-child:after {
   content: none;
 }
-.navigation {
-  padding-bottom: 1em;
-  padding-top: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1em;
-  margin-right: 1em;
-}
+
 .navigation__button {
-  border: 0;
-  display: flex;
-  background: 0 0;
-  outline: 0;
-  padding: 0;
+  display: none;
   cursor: pointer;
-  color: #34a3ab;
   font-size: 1.25em;
   font-weight: 700;
 }
-.navigation--active {
-  display: flex;
-  justify-content: center;
+
+.navigation__item {
+  display: inline-block;
 }
-@media (min-width: 601px) {
-  .navigation__button {
-    display: none;
-  }
-  .navigation {
-    padding: 0;
-  }
-  .navigation__item {
-    display: inline-block;
-  }
-  .navigation__item:after {
-    content: " /";
-    margin-left: 1.75em;
-    color: #ddd;
-  }
+.navigation__item:after {
+  content: " /";
+  margin-left: 1.75em;
+  color: #ddd;
 }
-.card,
-footer {
-  display: flex;
-}
+
+/* About */
+
 .about h1 {
   font-size: 2em;
   color: #777;
@@ -121,7 +106,6 @@ footer {
 .about__info {
   margin-right: 2em;
   max-width: 575px;
-  font-family: emoji;
 }
 .about__photo {
   width: 200px;
@@ -129,33 +113,47 @@ footer {
   margin-right: auto;
   border-radius: 8em;
 }
-.about__contact {
+
+.contact__box {
   display: flex;
   align-items: center;
 }
 .about__social {
   margin-left: 1em;
 }
-.about__button {
+
+.emoji {
+  width: 1.1em;
+  vertical-align: sub;
+}
+
+/* Button */
+
+.button {
   padding: 0.5em;
   margin: 1em 0;
   border-radius: 1em;
   background-color: #34a3ab;
-  border: 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
   font-weight: 700;
   font-size: 1.2em;
 }
-a.about__button:active,
-a.about__button:hover,
-a.about__button:link,
-a.about__button:visited {
+
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
   color: #fff;
 }
-.about__contact a,
+
+.contact__box a,
+.contact a,
 footer a {
   text-decoration: none;
 }
+
+/* Projects */
+
 .projects {
   flex-direction: column;
 }
@@ -181,6 +179,9 @@ footer a {
   font-size: 1.75em;
   margin-bottom: 0.5em;
 }
+
+/* Contact */
+
 .contact {
   max-width: 807px;
 }
@@ -191,6 +192,9 @@ footer a {
   margin: 0.25em 0 1em;
   font-size: 1.75em;
 }
+
+/* Footer */
+
 footer {
   padding: 1em;
   align-items: center;
@@ -200,8 +204,4 @@ footer p {
 }
 footer a {
   margin-left: 1em;
-}
-.emoji {
-  width: 1.1em;
-  vertical-align: sub;
 }
