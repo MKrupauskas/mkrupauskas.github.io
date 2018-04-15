@@ -1,5 +1,11 @@
-const cacheName = "v1";
-const cacheFiles = ["./", "./index.html", "./script.js", "./style.css"];
+const cacheName = "v2";
+const cacheFiles = [
+  "./",
+  "./index.html",
+  "./script.js",
+  "./base.css",
+  "./mobile.css"
+];
 
 self.addEventListener("install", function(e) {
   console.log("[SW] Installed");
