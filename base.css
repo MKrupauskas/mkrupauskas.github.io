@@ -127,7 +127,11 @@ svg {
 }
 
 .about__social {
-  margin-left: 1em;
+  margin-left: 0.5em;
+}
+
+.about__social a {
+  margin-left: 0.5em;
 }
 
 .emoji {
