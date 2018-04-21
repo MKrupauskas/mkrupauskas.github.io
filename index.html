@@ -55,10 +55,10 @@
       <div class="about__info">
         <h1>Mykolas Krupauskas</h1>
         <h2>Software developer
-          <img alt="laptop" class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/microsoft/106/personal-computer_1f4bb.png"
-            srcset="https://emojipedia-us.s3.amazonaws.com/thumbs/144/microsoft/106/personal-computer_1f4bb.png 2x" /> / Techie
-          <img alt="robot face" class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/microsoft/106/robot-face_1f916.png"
-            srcset="https://emojipedia-us.s3.amazonaws.com/thumbs/144/microsoft/106/robot-face_1f916.png 2x" />
+          <img alt="laptop" class="emoji lazyload" data-src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/microsoft/106/personal-computer_1f4bb.png"
+            data-srcset="https://emojipedia-us.s3.amazonaws.com/thumbs/144/microsoft/106/personal-computer_1f4bb.png 2x" /> / Techie
+          <img alt="robot face" class="emoji lazyload" data-src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/microsoft/106/robot-face_1f916.png"
+            data-srcset="https://emojipedia-us.s3.amazonaws.com/thumbs/144/microsoft/106/robot-face_1f916.png 2x" />
         </h2>
         <p>I am a passionate developer from Vilnius, Lithuania. I create and develop various web, and software projects. Front-end,
           React, Node, JavaScript.
@@ -103,7 +103,8 @@
       </div>
       <picture>
         <source type="image/webp" srcset="images/profile-image.webp">
-        <img class="about__photo" src="images/profile-image.jpg" alt="Mykolas Krupauskas">
+        <img class="about__photo lazyload" data-src="images/profile-image.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          alt="Mykolas Krupauskas">
       </picture>
     </div>
   </section>
@@ -114,8 +115,9 @@
       <div class="card">
         <a href="https://trustum.review">
           <picture>
-            <source type="image/webp" srcset="images/trustum.webp">
-            <img class="card__photo" src="images/trustum.png" alt="Trustum.Review">
+            <source type="image/webp" data-srcset="images/trustum.webp">
+            <img class="card__photo lazyload" data-src="images/trustum.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              alt="Trustum.Review">
           </picture>
         </a>
         <div class="card__info">
@@ -130,8 +132,9 @@
       <div class="card">
         <a href="https://food-review.herokuapp.com/">
           <picture>
-            <source type="image/webp" srcset="images/reviews.webp">
-            <img class="card__photo" src="images/reviews.png" alt="Damn That's Delicious">
+            <source type="image/webp" data-srcset="images/reviews.webp">
+            <img class="card__photo lazyload" data-src="images/reviews.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              alt="Damn That's Delicious">
           </picture>
         </a>
         <div class="card__info">
@@ -145,8 +148,9 @@
       <div class="card">
         <a href="https://wkndwarriors.wixsite.com/mushrooming">
           <picture>
-            <source type="image/webp" srcset="images/mushrooming.webp">
-            <img class="card__photo" src="images/mushrooming.png" alt="Mushrooming">
+            <source type="image/webp" data-srcset="images/mushrooming.webp">
+            <img class="card__photo lazyload" data-src="images/mushrooming.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              alt="Mushrooming">
           </picture>
         </a>
         <div class="card__info">
@@ -219,9 +223,10 @@
   </footer>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic" media="none" onload="if(media!='all')media='all'">
-  <link async rel="stylesheet" href="min.css">
+  <link async rel="stylesheet" href="base.css">
   <!-- <link rel="stylesheet" href="mobile.css" media="(max-width: 641px)"> -->
-  <script src="script.js"></script>
+  <script async src="lazysizes.min.js"></script>
+  <script async src="script.js"></script>
 </body>
 
 </html>
