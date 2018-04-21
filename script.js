@@ -12,7 +12,7 @@ document.querySelector("#date").innerHTML = new Date().getFullYear();
 
 // smooth scrolling
 document.querySelectorAll(".scroll").forEach(item => {
-  item.addEventListener("click", function() {
+  item.addEventListener("click", function(event) {
     // gets class name from href and removes the #
     const className = item.getAttribute("href").split("#")[1];
     event.preventDefault();
