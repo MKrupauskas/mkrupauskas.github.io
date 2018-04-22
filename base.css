@@ -4,6 +4,7 @@
 .lazyloading {
   opacity: 0;
 }
+
 .lazyloaded {
   opacity: 1;
   transition: opacity 300ms;
@@ -31,9 +32,6 @@ ul,
 h1,
 h2,
 h3,
-span,
-a,
-li,
 p {
   font-family: "Didact Gothic", sans-serif;
   margin: 0;
