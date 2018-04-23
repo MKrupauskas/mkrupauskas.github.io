@@ -179,6 +179,10 @@ footer a {
   flex-direction: column;
 }
 
+.projects h3:last-child {
+  text-align: center;
+}
+
 .card {
   display: flex;
   align-items: center;
