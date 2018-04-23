@@ -24,7 +24,6 @@
     </script>
 
   <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic" media="none" onload="if(media!='all')media='all'">
-  <style>.navigation,section{display:flex;border-bottom:solid 1px #ddd}.lazyload,.lazyloading{opacity:0}.lazyloaded{opacity:1;transition:opacity .3s}a,a:visited{color:#34a3ab}a:hover{color:#45b4bc}a:active{color:#aaa}body,h1,h2,h3,p,ul{font-family:"Didact Gothic",sans-serif;margin:0;padding:0}section{margin:0 1em;justify-content:center;align-content:center}p{font-size:1.2em}svg{fill:#34a3ab;width:2em;height:2em}.about,.contact,.projects{padding:2em;display:flex;justify-content:center;align-items:center}.navigation{flex-direction:column;align-items:center}.navigation__button svg{width:28px;height:29px}.navigation__list{list-style:none}.navigation__item:last-child:after{content:none}.navigation__button{display:none}.navigation__item{font-size:1.3em;margin:1em;display:inline-block}.card,footer{display:flex}.navigation__item:after{content:" /";margin-left:1.75em;color:#ddd}.about h1{font-size:2em;color:#777}.about h2{font-size:2.2em}.about__info{margin-right:2em;max-width:575px}.about__photo{width:200px;height:200px;margin-right:auto;border-radius:8em}.contact__box{display:flex;align-items:center}.about__social,.about__social a{margin-left:.5em}.emoji{width:1.1em;vertical-align:sub}.button{padding:.5em;margin:1em 0;border-radius:1em;background-color:#34a3ab;box-shadow:0 0 20px 0 rgba(0,0,0,.11);font-weight:700;font-size:1.2em}a.button:active,a.button:hover,a.button:link,a.button:visited{color:#fff}.contact a,.contact__box a,footer a{text-decoration:none}.projects{flex-direction:column}.card{align-items:center;justify-content:center;margin:2em 0}.card>:first-child{margin-right:2em}.card__photo{border-radius:1em;width:300px}.card__info{max-width:475px}.card:nth-of-type(2n) .card__info{order:-1}.card__info h3{font-size:1.75em;margin-bottom:.5em}.contact{max-width:807px}.contact h2{font-size:2em}.contact h3{margin:.25em 0 1em;font-size:1.75em}footer{padding:1em;align-items:center}footer p{margin-right:auto}footer a{margin-left:1em}@media (max-width:641px){.about__info,.card__info,.contact,footer{text-align:center}.about,.contact,.projects{padding:2em 0}.navigation{padding-bottom:1em;padding-top:1em}.navigation__item:after{content:none}.navigation__item{display:none}.navigation__button{display:flex;cursor:pointer;font-size:1.25em;font-weight:700}.about{flex-direction:column-reverse}.about__info{display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0}.about__photo{margin:0}.card:nth-child(2n+1){flex-direction:column-reverse}.card:nth-child(2n){flex-direction:column}.card>:first-child,.card>:last-child{margin-right:0}.card__photo{margin-bottom:1em;width:200px}footer{flex-direction:column-reverse;justify-content:center}footer .about__social,footer p{margin:0 0 .5em}.emoji{image-rendering:-webkit-optimize-contrast}.about__photo{margin-bottom:1em}.contact__box{flex-direction:column}.about__social{margin:0}.about h1{font-size:1.7em}.about h2{font-size:1.75em}.contact h2,.contact h3{font-size:1.5em}.navigation--active{display:flex;justify-content:center}.about__social a{margin:0 .5em .5em}}</style>
 </head>
 
 <body>
@@ -172,6 +171,60 @@
     </div>
   </section>
 
+  <section>
+    <div id="contact" class="contact">
+      <div class="contact__info">
+        <h2>Contact me! I am open to opportunities.</h2>
+        <h3>
+          <a href="mailto:mkrupauskas@gmail.com">mkrupauskas@gmail.com</a>
+        </h3>
+        <p>Send me an email, I will be sure to get back to you as soon as possible. I am also active on social media so you
+          can connect with me there.</p>
+        <div class="contact__box">
+          <a class="button" href="mailto:mkrupauskas@gmail.com">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <span id="date"></span> Mykolas Krupauskas. Made with ❤️ and a ⌨️.</p>
+    <div class="about__social">
+      <a href="https://www.linkedin.com/in/mykolaskrupauskas/" aria-label="linkedin">
+        <!-- linkedin logo -->
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"
+          />
+        </svg>
+
+      </a>
+      <a href="https://github.com/MKrupauskas" aria-label="github">
+        <!-- github logo -->
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+          />
+        </svg>
+
+      </a>
+      <a href="https://twitter.com/mykolaskrup" aria-label="twitter">
+        <!-- twitter logo -->
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"
+          />
+        </svg>
+
+      </a>
+      <a href="https://medium.com/@m.krupauskas" aria-label="medium">
+        <!-- medium logo -->
+        <svg xmlns="https://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24">
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm-2.426 14.741h-3.574v-.202l1.261-1.529c.134-.139.195-.335.162-.526v-5.304c.015-.147-.041-.293-.151-.392l-1.121-1.35v-.201h3.479l2.689 5.897 2.364-5.897h3.317v.201l-.958.919c-.083.063-.124.166-.106.269v6.748c-.018.103.023.206.106.269l.936.919v.201h-4.706v-.201l.969-.941c.095-.095.095-.123.095-.269v-5.455l-2.695 6.844h-.364l-3.137-6.844v4.587c-.026.193.038.387.174.526l1.26 1.529v.202z"
+          />
+        </svg>
+
+      </a>
+    </div>
+  </footer>
 
   <!-- <link async rel="stylesheet" href="base.css"> -->
   <!-- <link async rel="stylesheet" href="mobile.css" media="(max-width: 641px)"> -->
